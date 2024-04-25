@@ -17,20 +17,20 @@ namespace Scripts.ModularAssemblies.Communication
                 $"{ModContext.ModName}.ModularDefinition: Init new ModularAssembliesDefinition");
 
             // Init
-            StoredDef = Modular_Assemblies_Client_Mod_Template.Data.Scripts.ModularAssemblies.ModularDefinition.GetBaseDefinitions();
+            StoredDef = ModularDefinition.GetBaseDefinitions();
 
             // Send definitions over as soon as the API loads, and create the API before anything else can init.
-            Modular_Assemblies_Client_Mod_Template.Data.Scripts.ModularAssemblies.ModularDefinition.ModularApi.Init(ModContext, SendDefinitions);
+            ModularDefinition.ModularApi.Init(ModContext, SendDefinitions);
         }
 
         protected override void UnloadData()
         {
-            Modular_Assemblies_Client_Mod_Template.Data.Scripts.ModularAssemblies.ModularDefinition.ModularApi.UnloadData();
+            ModularDefinition.ModularApi.UnloadData();
         }
 
         private void SendDefinitions()
         {
-            Modular_Assemblies_Client_Mod_Template.Data.Scripts.ModularAssemblies.ModularDefinition.ModularApi.RegisterDefinitions(StoredDef);
+            ModularDefinition.ModularApi.RegisterDefinitions(StoredDef);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Scripts.ModularAssemblies
         /// <param name="baseDefs"></param>
         internal static ModularDefinitionContainer GetBaseDefinitions()
         {
-            return new Modular_Assemblies_Client_Mod_Template.Data.Scripts.ModularAssemblies.ModularDefinition().Container;
+            return new ModularDefinition().Container;
         }
     }
 }
