@@ -1,8 +1,8 @@
-﻿using Scripts.ModularAssemblies.Communication;
-using static Scripts.ModularAssemblies.Communication.DefinitionDefs;
+﻿using ModularAssemblies.Communication;
+using static ModularAssemblies.Communication.DefinitionDefs;
 
 // ReSharper disable once CheckNamespace
-namespace Scripts.ModularAssemblies
+namespace ModularAssemblies
 {
     internal partial class ModularDefinition
     {

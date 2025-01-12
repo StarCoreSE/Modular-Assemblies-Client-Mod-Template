@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Sandbox.ModAPI;
 using VRageMath;
-using static Scripts.ModularAssemblies.Communication.DefinitionDefs;
+using static ModularAssemblies.Communication.DefinitionDefs;
 
-namespace Scripts.ModularAssemblies
+namespace ModularAssemblies
 {
     /* Hey there modders!
      *
@@ -49,6 +49,11 @@ namespace Scripts.ModularAssemblies
                 // You can remove this function, and any others if need be.
                 MyAPIGateway.Utilities.ShowMessage("Modular Assemblies", $"ExampleDefinition.OnPartDestroy called.\nI hope the explosion was pretty.");
                 MyAPIGateway.Utilities.ShowNotification("Assembly has " + ModularApi.GetMemberParts(assemblyId).Length + " blocks.");
+            },
+
+            OnAssemblyClose = (assemblyId) =>
+            {
+                MyAPIGateway.Utilities.ShowMessage("Modular Assemblies", $"ExampleDefinition.OnAssemblyClose called.\nAssembly: {assemblyId}");
             },
 
             // Optional - if this is set, an assembly will not be created until a baseblock exists.

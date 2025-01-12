@@ -2,9 +2,9 @@
 using VRage.Game;
 using VRage.Game.Components;
 using VRage.Utils;
-using static Scripts.ModularAssemblies.Communication.DefinitionDefs;
+using static ModularAssemblies.Communication.DefinitionDefs;
 
-namespace Scripts.ModularAssemblies.Communication
+namespace ModularAssemblies.Communication
 {
     [MySessionComponentDescriptor(MyUpdateOrder.Simulation, int.MinValue)]
     internal class ModularDefinitionSender : MySessionComponentBase
