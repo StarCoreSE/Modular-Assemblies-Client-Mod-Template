@@ -18,4 +18,4 @@ This template is a functional mod on its own. It can be copied into your mods fo
 
 Replace "YourMod" with the name of your mod, and edit `Data/Scripts/YourMod/ModularAssemblies/ExampleDefinition.cs` and `MasterDefinition.cs` to create your own assembly definitions.
 
-A sample sessioncomponent assembly manager, `Data/Scripts/YourMod/AssemblyManager.cs` (and the other scripts in its folder), have been provided as an example for more complex assemblies. They are not required for your mod to function.
+A sample sessioncomponent assembly manager, `Data/Scripts/YourMod/AssemblyManager.cs` (and the other scripts in its folder), has been provided as an example for more complex assemblies. They are not required for your mod to function, and may (should) be edited to your heart's content.
