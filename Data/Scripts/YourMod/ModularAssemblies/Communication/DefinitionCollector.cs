@@ -1,8 +1,8 @@
-﻿using ModularAssemblies.Communication;
-using static ModularAssemblies.Communication.DefinitionDefs;
+﻿using YourMod.ModularAssemblies.Communication;
+using static YourMod.ModularAssemblies.Communication.DefinitionDefs;
 
 // ReSharper disable once CheckNamespace
-namespace ModularAssemblies
+namespace YourMod.ModularAssemblies
 {
     internal partial class ModularDefinition
     {
@@ -20,7 +20,7 @@ namespace ModularAssemblies
         /// <param name="baseDefs"></param>
         internal static ModularDefinitionContainer GetBaseDefinitions()
         {
-            return new ModularDefinition().Container;
+            return new YourMod.ModularAssemblies.ModularDefinition().Container;
         }
     }
 }

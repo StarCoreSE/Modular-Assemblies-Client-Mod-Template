@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Sandbox.ModAPI;
 using VRageMath;
-using static ModularAssemblies.Communication.DefinitionDefs;
+using static YourMod.ModularAssemblies.Communication.DefinitionDefs;
 
-namespace ModularAssemblies
+namespace YourMod.ModularAssemblies
 {
     /* Hey there modders!
      *
@@ -12,6 +12,7 @@ namespace ModularAssemblies
      *
      * If you're just here for the API, head on over to https://github.com/StarCoreSE/Modular-Assemblies/wiki/The-Modular-API for a (semi) comprehensive guide.
      *
+     * This class uses internal logic. See also ExampleDefinition_WithLogic.cs.
      */
     internal partial class ModularDefinition
     {

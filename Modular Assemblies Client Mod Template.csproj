@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>ModularAssemblies</RootNamespace>
+    <RootNamespace>YourMod</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <Platforms>x64</Platforms>
     <LangVersion>6</LangVersion>

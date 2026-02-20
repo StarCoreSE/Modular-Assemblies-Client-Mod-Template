@@ -1,10 +1,8 @@
-﻿using System;
-using VRage.Game;
-using VRage.Game.Components;
+﻿using VRage.Game.Components;
 using VRage.Utils;
-using static ModularAssemblies.Communication.DefinitionDefs;
+using static YourMod.ModularAssemblies.Communication.DefinitionDefs;
 
-namespace ModularAssemblies.Communication
+namespace YourMod.ModularAssemblies.Communication
 {
     [MySessionComponentDescriptor(MyUpdateOrder.Simulation, int.MinValue)]
     internal class ModularDefinitionSender : MySessionComponentBase
@@ -17,20 +15,20 @@ namespace ModularAssemblies.Communication
                 $"{ModContext.ModName}.ModularDefinition: Init new ModularAssembliesDefinition");
 
             // Init
-            StoredDef = ModularDefinition.GetBaseDefinitions();
+            StoredDef = global::YourMod.ModularAssemblies.ModularDefinition.GetBaseDefinitions();
 
             // Send definitions over as soon as the API loads, and create the API before anything else can init.
-            ModularDefinition.ModularApi.Init(ModContext, SendDefinitions);
+            global::YourMod.ModularAssemblies.ModularDefinition.ModularApi.Init(ModContext, SendDefinitions);
         }
 
         protected override void UnloadData()
         {
-            ModularDefinition.ModularApi.UnloadData();
+            global::YourMod.ModularAssemblies.ModularDefinition.ModularApi.UnloadData();
         }
 
         private void SendDefinitions()
         {
-            ModularDefinition.ModularApi.RegisterDefinitions(StoredDef);
+            global::YourMod.ModularAssemblies.ModularDefinition.ModularApi.RegisterDefinitions(StoredDef);
         }
     }
 }
