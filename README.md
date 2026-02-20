@@ -8,7 +8,7 @@ Modular Assemblies is a mod framework designed to put the 'Engineer' back into '
 
 This is a client mod, and must reference the original framework to function. [Check out the wiki](https://github.com/StarCoreSE/Modular-Assemblies/wiki) for more information and guides, and feel free to message [@aristeas.] [on the StarCore discord](https://discord.gg/starcore) if you have any questions or comments.
 
-By [[@Aristeas](https://github.com/Jnick-24)], with help from [@Invalid](https://github.com/InvalidArgument3).
+By [[@Aristeas](https://github.com/ari-steas)], with help from [@Invalid](https://github.com/InvalidArgument3).
 
 ---
 
