@@ -361,7 +361,7 @@ namespace YourMod.ModularAssemblies.Communication
                 RegisterOnAssemblyClose(definition.Name, definition.OnAssemblyClose);
 
                 if (validDefinitions.Contains(definition.Name))
-                    definition.OnInit?.Invoke();
+                    definition.OnInit?.Invoke(definition);
             }
 
             return validDefinitions;
@@ -716,7 +716,7 @@ namespace YourMod.ModularAssemblies.Communication
             /// <summary>
             ///     Triggered whenever the definition is first loaded.
             /// </summary>
-            public Action OnInit { get; set; }
+            public Action<ModularPhysicalDefinition> OnInit { get; set; }
 
             /// <summary>
             ///     Called when a valid part is placed.

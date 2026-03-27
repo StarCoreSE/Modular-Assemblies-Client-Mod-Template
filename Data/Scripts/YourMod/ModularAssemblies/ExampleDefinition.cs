@@ -25,9 +25,9 @@ namespace YourMod.ModularAssemblies
             // Unique name of the definition.
             Name = "ExampleDefinition",
 
-            OnInit = () =>
+            OnInit = (definition) =>
             {
-                MyAPIGateway.Utilities.ShowMessage("Modular Assemblies", "ExampleDefinition.OnInit called.");
+                MyAPIGateway.Utilities.ShowMessage("Modular Assemblies", $"{definition.Name}.OnInit called.");
             },
 
             // Triggers whenever a new part is added to an assembly.
